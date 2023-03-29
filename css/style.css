@@ -1,0 +1,355 @@
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: montserrat, sans-serif;
+	font-size: 1em;
+}
+h2{font-size: 2.6em; color: #fff; font-weight: bold;}
+h3{font-size: 1.4em; color: #fff; font-weight: bold; line-height: 1.2em;}
+h4{font-size: 1.2em; color: #fff; font-weight: bold;}
+p{font-size: 1.1em; color: #444}
+
+
+#navegacion{
+	position: fixed;
+	width: 100%;
+	padding: 25px;
+	z-index: 100;
+	display: flex;
+	flex-flow: nowrap;
+	position: fixed;
+	background: rgb(9,121,18);
+	background: linear-gradient(180deg, rgba(9,121,18,1) 25%, rgba(0,212,255,0) 100%);
+}
+.hamburguesa{
+	width: 15%;
+	position: absolute;
+	right: 1rem;
+	display: none;
+}
+.hamburguesa img{
+	width: 100%;
+}
+#logo{
+	width: 37%;
+	padding: 10px;
+	position: fixed;
+	z-index: 110;
+}
+#logo a img{
+	width: 50%;
+}
+#nav{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: end;
+	align-items: space-between;
+}
+
+/*.opacity{
+	transition: all .5s ease;
+}*/
+.opacityno{
+	opacity: 0;
+}
+.section{
+/*	margin: 10px;*/
+	padding: 5px;
+	width: 13%;
+}
+.section>a{
+	color:#fff;
+	padding: 10px;
+	font-size: 1.3em;
+	font-weight: bold;
+
+}
+.section>a:hover{
+	background-color: #fff;
+	color: green;
+}
+#foods{
+	z-index: 1000;
+	width: 450%;
+	padding: 10px 0;
+	display: none;
+	margin-top: 15px;
+	background: rgb(9,121,18);
+	background: linear-gradient(180deg, rgba(9,121,18,1) 0%, rgba(9,121,18,0.7) 100%);
+}
+#foods li:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#frutas:hover ul{
+	display: block;
+}
+#foods li{
+	width: 100%;
+	padding: 5px 0;
+}
+#foods li>a{
+	width: 100%;
+	padding: 10px 180px 10px 5px;
+	color: #fff;
+	font-size: 1.2em;
+	text-align: left;
+}
+#nosotros{
+	height: 670px;
+	background-image: url("../img/productos.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+#about{
+	width: 65%;
+	padding: 15px 50px;
+	position: relative;
+	top: 200px;
+	margin: 0 auto;
+	background: rgb(9,121,18);
+	background: linear-gradient(180deg, rgba(9,121,18,0.6951155462184874) 23%, rgba(0,212,255,0) 100%);
+}
+#about h2{
+	margin-bottom: 10px;
+	text-align: center;
+}
+#about h3{
+	margin-bottom: 10px;
+	text-align: center;
+}
+#about p{
+	color: #fff;
+	line-height: 1.2em;
+}
+#cacao{
+	height: 670px;
+	background-image: url("../img/cacao2.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+#maca{
+	height: 670px;
+	background-image: url("../img/macaroot.jpg");
+	background-size: cover;
+	background-position: top;
+}
+#tarwi{
+	height: 670px;
+	background-image: url("../img/tarwi2.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+#camu{
+	height: 670px;
+	background-image: url("../img/camucamu.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+#golden{
+	height: 670px;
+	background-image: url("../img/goldenberry.jpg");
+	background-size: cover;
+	background-position: top;
+}
+#purple{
+	height: 670px;
+	background-image: url("../img/purplecorn.jpg");
+	background-size: cover;
+	background-position: top;
+}
+#lucuma{
+	height: 670px;
+	background-image: url("../img/lucuma.png");
+	background-size: cover;
+	background-position: top;
+}
+#graviola{
+	height: 670px;
+	background-image: url("../img/graviola.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+#quinoa{
+	height: 670px;
+	background-image: url("../img/quinoa.jpg");
+	background-size: cover;
+	background-position: top;
+}
+#cats{
+	height: 670px;
+	background-image: url("../img/catsclaw.jpg");
+	background-size: cover;
+	background-position: top;
+}
+.frutas{
+	width: 75%;
+	padding: 15px 50px;
+	position: relative;
+	top: 75px;
+	margin: 0 5%;
+}
+.frutas h2{
+	margin-bottom: 10px;
+	padding: 3px;
+	background: linear-gradient(90deg, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.0) 95%);
+}
+.frutas>h3{
+	padding: 3px;
+	background: linear-gradient(90deg, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.0) 95%);
+}
+.frutas>p{
+/*	margin-bottom: 8px;*/
+	color: #fff;
+	padding: 3px;
+	background: linear-gradient(90deg, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.0) 95%);
+}
+
+.frutas>.description{
+	padding: 10px;
+	color: #444;
+	line-height: 1.2em;
+	margin-bottom: 0;
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,0.8) 23%, rgba(255,255,255,0.4) 100%);
+}
+.mapa{
+	width: 60%;
+	display: flex;
+	flex-flow: wrap;
+	align-content: space-between;
+	background: rgb(9,121,18);
+	background: linear-gradient(90deg, rgba(9,121,18,1) 23%, rgba(0,212,255,0) 100%);
+}
+.presentation{
+	display: flex;
+	flex-flow: row nowrap;
+}
+.presentation>p{color: #fff; padding-top: 15px; padding-left: 3px; padding-bottom: 3px; background: linear-gradient(90deg, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.0) 95%);}
+.presentation img{width: 7%; margin-left: 10px;}
+.info{
+	width: 40%;
+	padding: 10px;
+}
+.info>h3{
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.info>p{
+	color: #fff;
+	line-height: 1.2em;
+}
+.info img{margin-right: 5px; width: 15%;}
+.mapa img{
+	margin-right: 10px;
+	padding: 5px;
+	width: 40%;
+}
+#contacto{
+	height: 630px;
+	background-image: url("../img/escritorio.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+#contact{
+	padding: 204px 100px;
+	display: flex;
+	flex-flow: column wrap;
+/*	justify-content: space-between;*/
+/*	align-items: center;*/
+	/*background: rgb(9,121,18);
+	background: linear-gradient(90deg, rgba(9,121,18,0.7) 23%, rgba(0,212,255,0) 100%);*/
+}
+#saludo{
+	width: 45%;
+	/*position: relative;
+	top: 200px;*/
+}
+#saludo>h2{
+	margin-bottom: 20px;
+}
+#datos{
+	margin-top: 50px;
+	width: 45%;
+}
+.correo{
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+}
+.correo>a{
+	margin-left: 10px;
+	padding-top: 3px;
+	color: #fff;
+}
+#foot{
+	padding: 5px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	background-color: #444;
+}
+#foot p{
+	color: #888;
+	margin: 0 5px;
+}
+
+
+/*------------------RESPONSIVE------------------------*/
+
+
+@media screen and (min-width: 755px) and (max-width: 995px){
+	#about{width: 90%;	top: 150px;}
+	.frutas{width: 80%; top: 90px; margin: 0 2%;}
+	#logo a img{width: 60%;}
+	#contact{padding: 120px 50px 190px;}
+	#saludo{width: 80%;}
+	#datos{width: 80%;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 755px){
+	#navegacion{background: linear-gradient(180deg, rgba(9,121,18,1) 5%, rgba(0,212,255,0) 22%);
+		padding: 13px;
+}
+	#logo{width: 48%;}
+	#logo a img{width: 100%;}
+	h2{font-size: 2em; color: #fff; font-weight: bold;}
+	h3{font-size: 1em; color: #fff;}
+	p{font-size: 1em; color: #444}
+	#about{width: 97%;	top: 150px; padding: 15px 18px;}
+	.frutas{width: 95%; top: 50px; margin: 0 2%; padding: 15px 10px;}
+	#frutas ul.close{display: none};
+
+	#cacao{height: 715px;}
+	#maca{height: 715px;}
+	#tarwi{height: 715px;}
+	#camu{height: 715px;}
+	#golden{height: 715px;}
+	#purple{height: 715px;}
+	#lucuma{height: 715px;}
+	#graviola{height: 715px;}
+	#quinoa{height: 715px;}
+	#cats{height: 715px;}
+
+	.mapa img{width: 40%;}
+	.mapa{width: 100%;}
+	.presentation>p{padding-top: 5px;}
+	.presentation img {width: 15%;}
+	.info{width: 55%;}
+	#contact{padding: 120px 25px 190px;}
+	#saludo{width: 80%;}
+	#datos{width: 80%;}
+
+	.active{transform: translate(-800px);}
+	#nav {background-color: rgba(9,121,18, 0.8); margin-top: 45px;}
+	.section{
+		margin: 10px 0;
+		padding: 10px;
+		width: 100%;
+	}
+	.hamburguesa{display: block;}
+/*	#foods li{display: none;}*/
+}
